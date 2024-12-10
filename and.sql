@@ -6,6 +6,6 @@ SELECT
 FROM 
     Invoice
 WHERE
-    total>1.98 AND BillingCity LIKE 'P%' OR BillingCity LIKE 'D%'
+    total>1.98 AND (BillingCity LIKE 'P%' OR BillingCity LIKE 'D%')
 ORDER BY
     InvoiceDate
